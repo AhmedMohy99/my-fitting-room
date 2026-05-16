@@ -1,12 +1,9 @@
-'use client'; // ضروري جداً لأن Three.js يعمل في المتصفح فقط (Client-Side)
+import BuildLogs from '../components/BuildLogs';
 
-import VirtualFittingRoom from '../components/VirtualFittingRoom';
-
-export default function Home() {
+export default function Dashboard() {
   return (
-    <main style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
-      {/* استدعاء غرفة القياس الافتراضية */}
-      <VirtualFittingRoom />
-    </main>
+    <div style={{ background: '#111', minHeight: '100vh', padding: '20px' }}>
+      <BuildLogs />
+    </div>
   );
 }
